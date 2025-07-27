@@ -165,16 +165,19 @@ nav {
             width: 300px;
             margin-right: 5px;
         } 
-
+.footer-social {
+            padding-right: 300px;
+        }
 .footer-social li {
             list-style: none;
             display: inline-block;
             margin: 0 10px;
+           
             
         }
 .footer-links li {
             list-style: none;
-            margin: 15px 10px;
+            margin: 15px 20px;
         } 
 .footer-links a {
             text-decoration: none;
@@ -194,13 +197,36 @@ nav {
             .Card {
                 grid-template-columns: repeat(2, 1fr);
             }
-        } 
+            .nav-ancors {
+                display: none;
+            }
+            .flower-store {
+                margin: 50px 0;
+            }
+            
+        }
+        
        
-@media screen and (min-width: 968px) {
+@media screen and (min-width: 576px) {
     .flower-store {
             display: flex;
             justify-content: center;
             margin: 50px 0;
         }
-    }
+    .footer-two {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin : 20px 0;
+        }
+    .footer-links ul{
+        display:grid;
+        grid-template-columns : repeat(2, 1fr);
+        }
+    .footer-image {
+            width: 30%;
+            text-align: center;
+        }
+}
     
