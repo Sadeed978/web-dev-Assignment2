@@ -94,14 +94,15 @@ nav {
             color:black;
             font-size: 0.9em;
         }
-.card-content button {
-            background-color: chocolate;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 1em;
-        }
+.btn{
+    background-color: chocolate;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
 .card-content button:hover {
             background-color: darkorange;
         }
@@ -126,14 +127,10 @@ nav {
 .bold {
         font-weight: bold;
         }
-.flower-store {
-            display: flex;
-            justify-content: center;
-            margin: 50px 0;
-        }
+
 .flower-store img {
             width: 80%;
-            height: 80%;
+            height: 90%;
         } 
 .flower-store-text h1{
             font-size: 2.5em;
@@ -145,4 +142,65 @@ nav {
 .flower-store-text ul li {
             margin: 10px 0;
         }
-           
+.from {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+.footer-content {
+            text-align: center;
+            padding: 20px;
+            background-image: url('../assets/news-letter-bg.png');
+        }
+.footer-content h1 {
+            font-size: 2.5em;
+            color: #f8f9fa;
+        } 
+.footer-content .from input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 300px;
+            margin-right: 5px;
+        } 
+
+.footer-social li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 10px;
+            
+        }
+.footer-links li {
+            list-style: none;
+            margin: 15px 10px;
+        } 
+.footer-links a {
+            text-decoration: none;
+            color:gray;
+            font-weight: bold;
+        }  
+
+@media screen and (max-width: 576px) {
+            .bannercontainer {
+                flex-direction:column-reverse;
+                align-items: center;
+            }
+            .banner-text, .banner-image {
+                width: 100%;
+            
+            }
+            .Card {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        } 
+       
+@media screen and (min-width: 968px) {
+    .flower-store {
+            display: flex;
+            justify-content: center;
+            margin: 50px 0;
+        }
+    }
+    
