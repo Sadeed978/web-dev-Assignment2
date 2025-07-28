@@ -128,9 +128,19 @@ nav {
         font-weight: bold;
         }
 
-.flower-store img {
-            width: 80%;
-            height: 90%;
+.flower-store-image{
+            width: 50%;
+            height: 10%;
+            display: flex;
+        }
+.based {
+    position: relative;
+    top: -50px;
+    left: -120px;
+        }
+.based img {
+            width: 200px;
+           
         } 
 .flower-store-text h1{
             font-size: 2.5em;
@@ -186,8 +196,55 @@ nav {
             text-decoration: none;
             color:gray;
             font-weight: bold;
-        }  
+        } 
+.card-pera {
+            color: white;
+            font-size: 1.2em;
+            text-align: center;
+            text-decoration: underline;
+        }
+.card-text {
+            color: white;
+            text-align: center;
+            margin: 20px 0;
+        }
+.card-deals-o{
+            background-image: url('../assets/deal-bloom.png');
+            width: 100%;
+            padding: 50px;     
+}
+.card-deals-tw{
+            background-image: url('../assets/deal-ana.png');
 
+            padding: 50px; 
+        }
+.card-deals-th{
+            background-image: url('../assets/deal-zabo.png');
+            padding: 50px;
+            justify-content: center;
+            text-align: center;
+            
+}
+.card-deals-container {
+    margin: 20px 0;
+        }
+
+.card-deals-container div {
+        
+        padding: 0px;
+        width: 100%;
+        height: auto;
+        margin: 10px;
+        background-size: cover;
+        border-radius: 10px;
+        overflow: hidden;
+        background-image: 50% 50%;
+        }
+
+.card-double div {
+    border-radius: 10px;
+    margin: 10px 0  0 0;
+}
 @media screen and (max-width: 576px) {
             .bannercontainer {
                 flex-direction:column-reverse;
@@ -204,17 +261,22 @@ nav {
                 display: none;
             }
             .flower-store {
+                justify-content: center;
+                text-align: center;
                 margin: 50px 0;
+            }
+            .based {
+                display: none;
             }
             
         }
         
        
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 577px) {
     .flower-store {
             display: flex;
             justify-content: center;
-            margin: 50px 0;
+            margin: 70px;
         }
     .footer-two {
             display: flex;
@@ -231,5 +293,16 @@ nav {
             width: 30%;
             text-align: center;
         }
+    .flower-store-text{
+            padding-top: 40px;
+            padding-right: 100px;
+            }
+    .card-deals-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin: 20px 0;
+        }
+    
 }
     
