@@ -166,14 +166,17 @@ nav {
             margin-right: 5px;
         } 
 .footer-social {
+
             padding-right: 300px;
         }
 .footer-social li {
             list-style: none;
-            display: inline-block;
             margin: 0 10px;
-           
-            
+        }
+.footer-social ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 .footer-links li {
             list-style: none;
